@@ -195,7 +195,7 @@ server <- function(input, output, session) {
     }
   })
   
-  
+
   df_compare_table <- reactive({
     req(input$metric_comp, input$period_a, input$period_b)
     pA <- canon_period(input$period_a); pB <- canon_period(input$period_b)
@@ -233,7 +233,7 @@ server <- function(input, output, session) {
       tab_header(title = paste0(input$metric_comp, " — Top 15 by ", input$period_b))
   })
   
-  
+
   universe_entities <- reactive({
     base <- if (input$mode == "Competitors") competitors_present else all_entities
     if (input$snl_pnc_only) {
@@ -291,7 +291,7 @@ server <- function(input, output, session) {
     do.call(tags$div, c(list(class = 'horizontal-bar-graph'), segments))
   })
   
-  
+ 
   comp_df <- reactive({
     req(input$cmp_metric, input$cmp_period_a, input$cmp_period_b)
     pA <- canon_period(input$cmp_period_a)
