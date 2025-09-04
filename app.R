@@ -8,8 +8,7 @@ library(scales)
 library(ggtext)
 library(ggplot2)
 library(plotly)
-library(DBI)
-library(odbc)
+
 
 
 # file_path <- "Milliman's Financial Insight v4 (2).xlsx"
