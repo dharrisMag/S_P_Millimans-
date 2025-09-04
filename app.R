@@ -165,7 +165,7 @@ ui <- fluidPage(
                mainPanel(uiOutput("htmlBars"))
              )
     ),
-    tabPanel("24 Q1 Vs 25 Q1 % Change",
+    tabPanel("Period over Period % Change",
              sidebarLayout(
                sidebarPanel(
                  selectInput("cmp_metric", "Choose a Metric:", choices = metrics_list),
